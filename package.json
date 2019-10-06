@@ -1,0 +1,47 @@
+{
+  "name": "tikuidoc-tikui",
+  "version": "1.0.0",
+  "description": "Tikui documentation",
+  "main": "tikuidoc.json",
+  "scripts": {
+    "test": "jest",
+    "lint": "concurrently npm:sass:lint npm:pug:lint",
+    "pug:lint": "pug-lint src && pug-lint part",
+    "sass:lint": "stylelint \"src/**/*.scss\" --syntax scss",
+    "sass:lint:fix": "stylelint \"src/**/*.scss\" --syntax scss --fix"
+  },
+  "repository": "github:tikui/tikuidoc-tikui",
+  "author": "Anthony Rey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tikui/tikuidoc-tikui/issues"
+  },
+  "homepage": "https://github.com/tikui/tikuidoc-tikui#readme",
+  "engines": {
+    "node": ">=10.16.3",
+    "npm": ">=6.9.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "concurrently": "^4.1.2",
+    "husky": "^3.0.8",
+    "jest": "^24.9.0",
+    "pug-lint": "^2.6.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-concentric-order": "^3.5.0",
+    "stylelint-config-sass-guidelines": "^6.1.0",
+    "stylelint-config-scss": "^1.0.0-security",
+    "stylelint-config-standard": "^19.0.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node": "^12.12.0"
+  }
+}

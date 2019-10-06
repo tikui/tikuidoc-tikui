@@ -1,0 +1,9 @@
+{
+  "public": [
+    {
+      "from": "documentation/style.scss",
+      "type": "scss",
+      "to": "documentation/style.css"
+    }
+  ]
+}
