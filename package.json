@@ -1,6 +1,6 @@
 {
   "name": "tikuidoc-tikui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tikui documentation",
   "main": "tikuidoc.json",
   "scripts": {
@@ -27,21 +27,21 @@
     }
   },
   "devDependencies": {
-    "@types/jest": "^24.0.19",
-    "concurrently": "^4.1.2",
-    "husky": "^3.0.8",
+    "@types/jest": "^24.9.0",
+    "concurrently": "^5.0.2",
+    "husky": "^4.0.10",
     "jest": "^24.9.0",
     "pug-lint": "^2.6.0",
-    "stylelint": "^11.0.0",
+    "stylelint": "^13.0.0",
     "stylelint-config-concentric-order": "^3.5.0",
-    "stylelint-config-sass-guidelines": "^6.1.0",
+    "stylelint-config-sass-guidelines": "^6.2.0",
     "stylelint-config-scss": "^1.0.0-security",
     "stylelint-config-standard": "^19.0.0",
-    "ts-jest": "^24.1.0",
-    "typescript": "^3.6.4"
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.4"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "node": "^12.12.0"
+    "bootstrap": "^4.4.1",
+    "node": "^12.14.1"
   }
 }
