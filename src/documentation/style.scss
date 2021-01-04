@@ -5,3 +5,8 @@
   width: 100%;
   resize: both;
 }
+
+.doc-code-example {
+  max-height: 200px;
+  overflow: auto;
+}
