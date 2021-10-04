@@ -4,3 +4,4 @@
 /test/
 /.editorconfig
 /jest.config.js
+/.husky/
