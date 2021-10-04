@@ -1,0 +1,15 @@
+mixin tikui-navbar(url, title)
+  -const brandUrl = url || '/';
+  -const brandTitle = title || 'Tikui';
+  nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+    .container-fluid
+      a.navbar-brand(href=url)=brandTitle
+      ul.navbar-nav.me-auto
+        block
+
+mixin tikui-navbar-item(url, name, active)
+  -const navUrl = url || '/';
+  -const navName = name || navUrl;
+  -const activeClass = active ? 'active' : null;
+  li.nav-item
+    a.nav-link(href=navUrl class=activeClass)=navName
