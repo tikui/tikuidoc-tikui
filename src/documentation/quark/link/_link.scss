@@ -1,0 +1,9 @@
+%tikui-link {
+  text-decoration: underline;
+  color: inherit;
+  font: inherit;
+}
+
+@mixin tikui-link {
+  @extend %tikui-link;
+}

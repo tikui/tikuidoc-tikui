@@ -1,0 +1,52 @@
+$tikui-line-section-breakpoint: $tikui-breakpoint-large !default;
+
+@mixin tikui-line-section-spacing($spacing) {
+  $pixel-spacing: $spacing * 1px;
+
+  &.-s#{$spacing} &--column {
+    margin: 0 $pixel-spacing 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@mixin tikui-line-section-small-spacing($spacing) {
+  $pixel-spacing: $spacing * 1px;
+
+  &.-s#{$spacing} &--column {
+    margin: 0 0 $pixel-spacing;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.tikui-line-section {
+  @each $size in $tikui-size-spacing {
+    @include tikui-line-section-spacing($size);
+  }
+  display: flex;
+  flex-direction: row;
+
+  &--column {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: $tikui-line-section-breakpoint) {
+  .tikui-line-section {
+    flex-direction: column;
+    @each $size in $tikui-size-spacing {
+      @include tikui-line-section-small-spacing($size);
+    }
+
+    &--column {
+      margin-right: 0;
+    }
+  }
+}

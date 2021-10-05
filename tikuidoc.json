@@ -4,6 +4,11 @@
       "from": "documentation/style.scss",
       "type": "scss",
       "to": "documentation/style.css"
+    },
+    {
+      "from": "documentation/assets",
+      "type": "copy",
+      "to": "documentation/assets"
     }
   ]
 }

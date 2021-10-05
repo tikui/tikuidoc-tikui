@@ -3,7 +3,9 @@ extends layout
 block title
   title Tikui
 block body
-  .doc-header
-    block header
-  .doc-content
-    block content
+  .tikui-template-page--header.doc-header
+    .tikui-template-page--container
+      block header
+  .tikui-template-page--body.doc-content
+    .tikui-template-page--container
+      block content
