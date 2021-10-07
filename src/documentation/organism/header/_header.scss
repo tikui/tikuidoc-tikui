@@ -1,0 +1,38 @@
+$tikui-header-height: $tikui-size-header-height !default;
+$tikui-header-spacing: 80px !default;
+$tikui-header-large-breakpoint: $tikui-breakpoint-large !default;
+$tikui-header-small-spacing: 10px !default;
+
+.tikui-header {
+  display: flex;
+  align-items: center;
+  height: $tikui-header-height;
+
+  &--slot {
+    margin: 0 $tikui-header-spacing 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.-expand {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $tikui-header-large-breakpoint) {
+  .tikui-header {
+    flex-direction: column;
+    margin: $tikui-header-small-spacing;
+    height: auto;
+
+    &--slot {
+      margin: 0 0 $tikui-header-small-spacing 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

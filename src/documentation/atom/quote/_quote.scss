@@ -1,0 +1,22 @@
+$tikui-quote-text-color: $tikui-color-text-dark !default;
+$tikui-quote-font-family: $tikui-font-family-main !default;
+$tikui-quote-text-font-size: 16px;
+$tikui-quote-author-font-size: 14px;
+$tikui-quote-author-margin-left: 24px;
+
+.tikui-quote {
+  margin: 0;
+  color: $tikui-quote-text-color;
+  font-family: $tikui-quote-font-family;
+
+  &--text {
+    margin: 0;
+    font-size: $tikui-quote-text-font-size;
+
+  }
+
+  &--author {
+    margin-left: $tikui-quote-author-margin-left;
+    font-size: $tikui-quote-author-font-size;
+  }
+}

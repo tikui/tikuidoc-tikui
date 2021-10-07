@@ -1,7 +1,13 @@
-@import 'bootstrap/scss/bootstrap';
+@import 'token/token';
+@import 'quark/quark';
+@import 'atom/atom';
+@import 'molecule/molecule';
+@import 'organism/organism';
+@import 'template/template';
 
 .doc-iframe {
   border: 1px solid #000;
+  background: #fff;
   width: 100%;
   resize: both;
 }

@@ -1,0 +1,13 @@
+$tikui-title-brand-large-breakpoint: $tikui-breakpoint-large !default;
+
+$tikui-title-brand-small-font-size: 7vw;
+
+.tikui-title-brand {
+  @include tikui-title-brand;
+}
+
+@media screen and (max-width: $tikui-header-item-large-breakpoint) {
+  .tikui-title-brand {
+    font-size: $tikui-title-brand-small-font-size;
+  }
+}

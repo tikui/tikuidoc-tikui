@@ -5,9 +5,12 @@ html
     block title
       title Tikui
     link(rel='stylesheet', href='/documentation/style.css')
-    link(rel='stylesheet', href='/lib/prismjs/prism.css')
+    link(rel='stylesheet', href='/lib/@fontsource/montserrat/index.css')
+    link(rel='stylesheet', href='/lib/@fontsource/montserrat/700.css')
+    link(rel='stylesheet', href='/lib/prismjs/prism-okaidia.css')
   body
-    block body
+    .tikui-template-page
+      block body
     :reload
     script(src='/lib/prismjs/prism.js')
     script(src='/lib/prismjs/prism-pug.js')
