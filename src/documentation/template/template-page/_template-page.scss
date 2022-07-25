@@ -4,7 +4,7 @@ $tikui-template-page-small-spacing: 2vw !default;
 $tikui-template-page-container-width: 1232px !default;
 $tikui-template-page-atomized-x: calc(50vw - 260px) !default;
 $tikui-template-page-atomized-y: -1260px !default;
-$tikui-template-page-atomized-image: url('/documentation/assets/atom-background.svg') !default;
+$tikui-template-page-atomized-image: url('documentation/assets/atom-background.svg') !default;
 
 .tikui-template-page {
   display: flex;

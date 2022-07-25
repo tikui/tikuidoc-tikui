@@ -1,5 +1,5 @@
 mixin tikui-navbar(url, title)
-  -const brandUrl = url || '/';
+  -const brandUrl = url || '[[TIKUI_BASEPATH]]';
   -const brandTitle = title || 'Tikui';
   header.tikui-header
     .tikui-header--slot
@@ -10,7 +10,7 @@ mixin tikui-navbar(url, title)
           block
 
 mixin tikui-navbar-item(url, name, selected)
-  -const navUrl = url || '/';
+  -const navUrl = url || '[[TIKUI_BASEPATH]]';
   -const navName = name || navUrl;
   -const selectedClass = selected ? '-selected' : null;
   li.tikui-header-navigation--slot
