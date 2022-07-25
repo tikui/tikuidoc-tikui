@@ -1,6 +1,6 @@
 {
   "name": "tikuidoc-tikui",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Tikui documentation",
   "main": "tikuidoc.json",
   "scripts": {
@@ -37,6 +37,6 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
-    "node": "^14.18.0"
+    "node": "^16.16.0"
   }
 }
