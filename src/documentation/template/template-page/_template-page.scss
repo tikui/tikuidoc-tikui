@@ -4,7 +4,9 @@ $tikui-template-page-small-spacing: 2vw !default;
 $tikui-template-page-container-width: 1232px !default;
 $tikui-template-page-atomized-x: calc(50vw - 260px) !default;
 $tikui-template-page-atomized-y: -1260px !default;
-$tikui-template-page-atomized-image: url('documentation/assets/atom-background.svg') !default;
+$tikui-template-page-atomized-image: url('assets/atom-background.svg') !default;
+$tikui-template-page-nav-padding: 32px !default;
+$tikui-template-page--nav-width: 340px !default;
 
 .tikui-template-page {
   display: flex;
@@ -25,20 +27,34 @@ $tikui-template-page-atomized-image: url('documentation/assets/atom-background.s
 
   &--container {
     box-sizing: content-box;
+    flex-basis: 0;
+    flex-grow: 1;
     margin: auto;
     padding: 0 $tikui-template-page-spacing;
-    width: $tikui-template-page-container-width;
-  }
-
-  &--header {
-    background-color: $tikui-color-shade-100;
+    width: auto;
+    min-width: 0;
+    max-width: $tikui-template-page-container-width;
   }
 
   &--body {
+    display: flex;
     flex-grow: 1;
     background-color: $tikui-color-background;
     padding: $tikui-template-page-spacing 0;
     overflow: auto;
+  }
+
+  &--nav {
+    box-sizing: content-box;
+    position: sticky;
+    top: 0;
+    padding: 0 $tikui-template-page-nav-padding;
+    width: $tikui-template-page--nav-width;
+    overflow: auto;
+  }
+
+  &--header {
+    background-color: $tikui-color-shade-100;
   }
 }
 
@@ -52,8 +68,14 @@ $tikui-template-page-atomized-image: url('documentation/assets/atom-background.s
     }
 
     &--body {
+      display: block;
       padding: $tikui-template-page-small-spacing 0;
       overflow: visible;
+    }
+
+    &--nav {
+      position: static;
+      width: auto;
     }
   }
 }

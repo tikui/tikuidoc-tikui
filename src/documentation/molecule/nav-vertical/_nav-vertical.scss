@@ -1,0 +1,35 @@
+$tikui-nav-vertical-padding: 32px !default;
+$tikui-nav-vertical-color-background: $tikui-color-background-secondary !default;
+$tikui-nav-vertical--item-spacing: 16px !default;
+$tikui-nav-vertical--item-level-1-spacing: 24px !default;
+$tikui-nav-vertical--item-indent-space: 16px !default;
+
+$levels: 1, 2, 3, 4, 5, 6;
+
+.tikui-nav-vertical {
+  display: block;
+  position: sticky;
+  margin: 0;
+  background-color: $tikui-nav-vertical-color-background;
+  padding: $tikui-nav-vertical-padding;
+  list-style: none;
+
+  &--item {
+    padding-bottom: $tikui-nav-vertical--item-spacing;
+    list-style: none;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    &.-level-1 {
+      padding-bottom: $tikui-nav-vertical--item-level-1-spacing;
+    }
+
+    @each $level in $levels {
+      &.-level-#{$level} {
+        padding-left: ($level - 1) * $tikui-nav-vertical--item-indent-space;
+      }
+    }
+  }
+}
