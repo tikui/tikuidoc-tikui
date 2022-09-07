@@ -6,6 +6,11 @@
       "to": "documentation/style.css"
     },
     {
+      "from": "documentation/scripts",
+      "type": "copy",
+      "to": "documentation/scripts"
+    },
+    {
       "from": "documentation/assets",
       "type": "copy",
       "to": "documentation/assets"

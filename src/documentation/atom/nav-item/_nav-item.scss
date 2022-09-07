@@ -1,0 +1,25 @@
+$tikui-nav-item-color-text: $tikui-color-text-dark !default;
+$tikui-nav-item-font-family: $tikui-font-family-main !default;
+$tikui-nav-item-font-size: 16px !default;
+$tikui-nav-item-main-font-size: 24px !default;
+
+.tikui-nav-item {
+  display: inline-block;
+  text-decoration: none;
+  color: $tikui-nav-item-color-text;
+  font-family: $tikui-nav-item-font-family;
+  font-size: $tikui-nav-item-font-size;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.-selected {
+    font-weight: bold;
+  }
+
+  &.-main {
+    font-size: $tikui-nav-item-main-font-size;
+  }
+
+}
