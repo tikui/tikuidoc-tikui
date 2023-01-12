@@ -17,8 +17,14 @@ $tikui-dual-section-medium-breakpoint: $tikui-breakpoint-medium !default;
 .tikui-dual-section {
   @include tikui-dual-section-size(100);
   @include tikui-dual-section-size(200);
+
   display: flex;
   align-items: center;
+
+  &--slot {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
 
   &.-right-to-left {
     flex-direction: row-reverse;
@@ -48,11 +54,6 @@ $tikui-dual-section-medium-breakpoint: $tikui-breakpoint-medium !default;
       margin-right: 0;
       text-align: left;
     }
-  }
-
-  &--slot {
-    flex-basis: 0;
-    flex-grow: 1;
   }
 
   &.-distant.-right-to-left > &--slot {

@@ -15,7 +15,8 @@ $tikui-linear-molecule-medium-breakpoint: $tikui-breakpoint-medium !default;
   }
 }
 
-@media screen and (max-width: $tikui-linear-molecule-medium-breakpoint) { .tikui-linear-molecule {
+@media screen and (max-width: $tikui-linear-molecule-medium-breakpoint) {
+  .tikui-linear-molecule {
     flex-direction: column;
 
     &--atom {

@@ -1,4 +1,4 @@
-@mixin tikui-horizontal-spacing--column-size($size) {
+@mixin tikui-horizontal-spacing-column-size($size) {
   &.-s#{$size} > &--column {
     margin-right: $size * 1px;
 
@@ -10,8 +10,9 @@
 
 .tikui-horizontal-spacing {
   @each $size in $tikui-size-spacing {
-    @include tikui-horizontal-spacing--column-size($size);
+    @include tikui-horizontal-spacing-column-size($size);
   }
+
   display: flex;
 
   &.-inline {

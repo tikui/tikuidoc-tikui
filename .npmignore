@@ -5,3 +5,4 @@
 /.editorconfig
 /jest.config.js
 /.husky/
+/tsconfig.json

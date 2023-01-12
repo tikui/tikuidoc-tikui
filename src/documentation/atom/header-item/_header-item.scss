@@ -7,11 +7,8 @@ $tikui-header-item-focus-color-shadow: $tikui-color-primary !default;
 $tikui-header-item-focus-radius-shadow: 5px !default;
 $tikui-header-item-font-size: 16px !default;
 $tikui-header-item-text-radius: 3px !default;
-
 $tikui-header-item-large-breakpoint: $tikui-breakpoint-large !default;
-
 $tikui-header-item-small-font-size: 5vw !default;
-
 $tikui-header-item-padding-bottom: $tikui-header-item-spacing + $tikui-header-item-feedback-size;
 
 .tikui-header-item {
@@ -38,14 +35,6 @@ $tikui-header-item-padding-bottom: $tikui-header-item-spacing + $tikui-header-it
     text-decoration: underline;
   }
 
-  &.-selected {
-    font-weight: bold;
-  }
-
-  &.-selected &--feedback {
-    display: block;
-  }
-
   &--feedback {
     display: none;
     position: absolute;
@@ -62,6 +51,14 @@ $tikui-header-item-padding-bottom: $tikui-header-item-spacing + $tikui-header-it
       height: $tikui-header-item-feedback-size;
       content: '';
     }
+  }
+
+  &.-selected {
+    font-weight: bold;
+  }
+
+  &.-selected &--feedback {
+    display: block;
   }
 }
 
