@@ -6,7 +6,7 @@ $tikui-template-page-atomized-x: calc(50vw - 260px) !default;
 $tikui-template-page-atomized-y: -1260px !default;
 $tikui-template-page-atomized-image: url('assets/atom-background.svg') !default;
 $tikui-template-page-nav-padding: 32px !default;
-$tikui-template-page--nav-width: 340px !default;
+$tikui-template-page-nav-width: 340px !default;
 
 .tikui-template-page {
   display: flex;
@@ -16,14 +16,6 @@ $tikui-template-page--nav-width: 340px !default;
   bottom: 0;
   left: 0;
   flex-direction: column;
-
-  &.-atomized &--body {
-    background-attachment: local;
-    background-image: $tikui-template-page-atomized-image;
-    background-position-x: $tikui-template-page-atomized-x;
-    background-position-y: $tikui-template-page-atomized-y;
-    background-repeat: no-repeat;
-  }
 
   &--container {
     box-sizing: content-box;
@@ -49,12 +41,20 @@ $tikui-template-page--nav-width: 340px !default;
     position: sticky;
     top: 0;
     padding: 0 $tikui-template-page-nav-padding;
-    width: $tikui-template-page--nav-width;
+    width: $tikui-template-page-nav-width;
     overflow: auto;
   }
 
   &--header {
     background-color: $tikui-color-shade-100;
+  }
+
+  &.-atomized &--body {
+    background-attachment: local;
+    background-image: $tikui-template-page-atomized-image;
+    background-position-x: $tikui-template-page-atomized-x;
+    background-position-y: $tikui-template-page-atomized-y;
+    background-repeat: no-repeat;
   }
 }
 

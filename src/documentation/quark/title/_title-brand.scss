@@ -2,6 +2,7 @@ $tikui-title-brand-font-size: 24px !default;
 
 %tikui-title-brand {
   @extend %tikui-title;
+
   text-decoration: none;
   font-size: $tikui-title-brand-font-size;
 }

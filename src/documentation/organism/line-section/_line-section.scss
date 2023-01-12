@@ -28,6 +28,7 @@ $tikui-line-section-breakpoint: $tikui-breakpoint-large !default;
   @each $size in $tikui-size-spacing {
     @include tikui-line-section-spacing($size);
   }
+
   display: flex;
   flex-direction: row;
 
@@ -41,6 +42,7 @@ $tikui-line-section-breakpoint: $tikui-breakpoint-large !default;
 @media screen and (max-width: $tikui-line-section-breakpoint) {
   .tikui-line-section {
     flex-direction: column;
+
     @each $size in $tikui-size-spacing {
       @include tikui-line-section-small-spacing($size);
     }
