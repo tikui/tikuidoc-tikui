@@ -1,34 +1,65 @@
 name: Node CI
 
-on: [push]
+on:
+  push:
+    tags:
+      - "*"
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 18
+          - 20
+          - 22.4
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 16.x
+      - name: Use Node.js  ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
-          node-version: 16.x
-      - name: npm ci, check, test
+          node-version:  ${{ matrix.node-version }}
+      - name: node check
         run: |
           npm ci
           npm run lint
+          npm run build
           npm test
         env:
           CI: true
+  status-checks:
+    name: status-checks
+    needs: [build]
+    permissions:
+      contents: none
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Validation Status checks
+        run: |
+          echo 'Configuration for Status checks that are required'
+          echo '${{ toJSON(needs) }}'
+          if [[ ('skipped' == '${{ needs.build.result }}') || ('success' == '${{ needs.build.result }}') ]]; then
+            exit 0
+          fi
+          exit 1
   deploy:
     if: startsWith(github.event.ref, 'refs/tags/')
-    needs: build
+    needs: ["status-checks"]
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
-      - name: Use Node.js 16.x
+      - name: Use Node.js LTS
         uses: actions/setup-node@v4
         with:
-          node-version: 16.x
+          cache: 'npm'
+          node-version: 'lts/*'
           registry-url: 'https://registry.npmjs.org'
       - name: deploy
         run: |
@@ -38,6 +69,7 @@ jobs:
           if [ "$PACKAGE_VERSION" != "$GITHUB_REF_NAME" ]; then echo "$PACKAGE_VERSION and $GITHUB_REF_NAME are not the same, skipping"; exit 1; fi
           echo "Publishing $PACKAGE_VERSION …"
           npm ci
+          npm run build
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -14,6 +14,11 @@
       "from": "documentation/assets",
       "type": "copy",
       "to": "documentation/assets"
+    },
+    {
+      "from": "documentation/lib",
+      "type": "copy",
+      "to": "documentation/lib"
     }
   ]
 }
