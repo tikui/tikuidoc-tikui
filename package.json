@@ -1,15 +1,22 @@
 {
   "name": "tikuidoc-tikui",
-  "version": "5.0.2",
+  "version": "6.0.0",
   "description": "Tikui documentation",
   "main": "tikuidoc.json",
+  "files": [
+    "tikuidoc.json",
+    "part",
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "concurrently npm:sass:lint npm:pug:lint",
     "pug:lint": "pug-lint src && pug-lint part",
     "sass:lint": "stylelint \"src/**/*.scss\"",
     "sass:lint:fix": "stylelint \"src/**/*.scss\" --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "tsx build.ts"
   },
   "repository": "github:tikui/tikuidoc-tikui",
   "author": "Anthony Rey",
@@ -23,6 +30,7 @@
     "npm": ">=6.14.9"
   },
   "devDependencies": {
+    "@fontsource/montserrat": "^5.0.18",
     "@types/jest": "^29.2.5",
     "concurrently": "^7.6.0",
     "husky": "^8.0.3",
@@ -34,6 +42,7 @@
     "stylelint-config-standard": "^29.0.0",
     "stylelint-config-standard-scss": "^6.1.0",
     "ts-jest": "^29.0.4",
+    "tsx": "^4.16.2",
     "typescript": "^5.0.0"
   }
 }
