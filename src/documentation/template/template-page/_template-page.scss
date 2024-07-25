@@ -11,10 +11,7 @@ $tikui-template-page-nav-width: 340px !default;
 .tikui-template-page {
   display: flex;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   flex-direction: column;
 
   &--container {

@@ -85,7 +85,8 @@ $tikui-dual-section-medium-breakpoint: $tikui-breakpoint-medium !default;
     &.-distant.-left-to-right > &--slot,
     &.-right-to-left > &--slot,
     &.-left-to-right > &--slot {
-      &:first-child, &:last-child {
+      &:first-child,
+      &:last-child {
         margin: 0 0 $tikui-dual-section-vertical-spacing;
         text-align: center;
       }
