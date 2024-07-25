@@ -6,12 +6,13 @@
   "files": [
     "tikuidoc.json",
     "part",
-    "dist",
     "src"
   ],
   "scripts": {
     "test": "jest",
     "lint": "concurrently npm:sass:lint npm:pug:lint",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
     "pug:lint": "pug-lint src && pug-lint part",
     "sass:lint": "stylelint \"src/**/*.scss\"",
     "sass:lint:fix": "stylelint \"src/**/*.scss\" --fix",
@@ -34,12 +35,11 @@
     "concurrently": "^8.0.0",
     "husky": "^9.1.1",
     "jest": "^29.3.1",
-    "postcss-scss": "^4.0.5",
+    "prettier": "^3.3.3",
     "pug-lint": "^2.6.0",
-    "stylelint": "^14.12.1",
-    "stylelint-config-concentric-order": "^5.1.0",
-    "stylelint-config-standard": "^29.0.0",
-    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint": "^16.7.0",
+    "stylelint-config-concentric-order": "^5.2.0",
+    "stylelint-config-standard-scss": "^13.1.0",
     "ts-jest": "^29.0.4",
     "tsx": "^4.16.2",
     "typescript": "^5.0.0"

@@ -15,10 +15,8 @@ $tikui-atom-color-background: $tikui-color-background-secondary !default;
     box-sizing: border-box;
     display: flex;
     position: absolute;
-    top: $tikui-atom-outer-space;
-    right: $tikui-atom-outer-space;
-    bottom: $tikui-atom-outer-space;
-    left: $tikui-atom-outer-space;
+    inset: $tikui-atom-outer-space $tikui-atom-outer-space $tikui-atom-outer-space
+      $tikui-atom-outer-space;
     align-items: center;
     justify-content: center;
     border-radius: 50%;

@@ -1,5 +1,6 @@
 const tikuiScripts = () => {
-  const titleSelectors = (content) => [...content?.querySelectorAll('h1, h2, h3, h4, h5, h6')].filter(title => title.id) || [];
+  const titleSelectors = (content) =>
+    [...content?.querySelectorAll('h1, h2, h3, h4, h5, h6')].filter((title) => title.id) || [];
 
   const initNav = () => {
     const content = document.querySelector('[data-navigable]');
@@ -10,7 +11,7 @@ const tikuiScripts = () => {
     }
 
     const nav = document.createElement('div');
-    nav.classList.add('tikui-template-page--nav')
+    nav.classList.add('tikui-template-page--nav');
     const navVertical = document.createElement('ul');
     navVertical.classList.add('tikui-nav-vertical');
 
@@ -34,30 +35,30 @@ const tikuiScripts = () => {
     content.prepend(nav);
   };
 
-  const launchOnHash = launch => {
+  const launchOnHash = (launch) => {
     const hash = location.hash;
 
     if (hash) {
       launch(hash.slice(1));
     }
-  }
+  };
 
-  const launchOnAnchor = launch => (hash) => {
+  const launchOnAnchor = (launch) => (hash) => {
     const element = document.getElementById(hash);
 
     if (element) {
       launch(element);
     }
-  }
+  };
 
-  const scrollToAnchor = () => launchOnHash(launchOnAnchor((anchor) => anchor.scrollIntoView()))
+  const scrollToAnchor = () => launchOnHash(launchOnAnchor((anchor) => anchor.scrollIntoView()));
 
   const init = () => {
     initNav();
     scrollToAnchor();
-  }
+  };
 
   init();
-}
+};
 
 document.addEventListener('DOMContentLoaded', tikuiScripts, false);

@@ -12,7 +12,10 @@ $tikui-button-color-border: $tikui-color-secondary !default;
 $tikui-button-color-text: $tikui-color-text-dark !default;
 $tikui-button-focus-blur-radius: 5px !default;
 $tikui-button-focus-color-shadow: $tikui-color-primary !default;
-$tikui-button-hover-color-background: color.scale($tikui-button-color-background, $lightness: -10%) !default;
+$tikui-button-hover-color-background: color.scale(
+  $tikui-button-color-background,
+  $lightness: -10%
+) !default;
 $tikui-button-secondary-color-background: $tikui-color-shade-100 !default;
 $tikui-button-secondary-color-border: $tikui-color-secondary !default;
 $tikui-button-secondary-color-text: $tikui-color-text-dark !default;

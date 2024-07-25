@@ -2,7 +2,6 @@
 
 This is the official Tikui documentation module.
 
-
 ## Create a documentation module
 
 If you want to create your own module, please name it `tikuidoc-$MODULE_NAME` where `MODULE_NAME` is the name of your module.

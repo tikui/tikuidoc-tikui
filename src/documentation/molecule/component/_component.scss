@@ -9,7 +9,9 @@
 .tikui-component {
   @include tikui-component-spacing(24);
 
-  &--markdown, &--render, &--code {
+  &--markdown,
+  &--render,
+  &--code {
     @include tikui-component-spacing(24);
   }
 
@@ -38,7 +40,8 @@
       @include tikui-link;
     }
 
-    ul, ol {
+    ul,
+    ol {
       @include tikui-list;
       @include tikui-component-spacing(16);
     }
