@@ -29,6 +29,9 @@
   "engines": {
     "node": ">=18.0.0"
   },
+  "peerDependencies": {
+    "sass": ">=1.45.0 <2.0.0"
+  },
   "devDependencies": {
     "@fontsource/montserrat": "5.0.18",
     "@types/jest": "29.5.12",
@@ -40,6 +43,7 @@
     "stylelint": "16.7.0",
     "stylelint-config-concentric-order": "5.2.0",
     "stylelint-config-standard-scss": "13.1.0",
+    "stylelint-order": "^6.0.4",
     "ts-jest": "29.2.3",
     "tsx": "4.16.2",
     "typescript": "5.5.4"

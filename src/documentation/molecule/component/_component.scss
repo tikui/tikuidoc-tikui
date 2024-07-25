@@ -1,5 +1,7 @@
 @mixin tikui-component-spacing($spacing) {
-  margin-bottom: $spacing * 1px;
+  & {
+    margin-bottom: $spacing * 1px;
+  }
 
   &:last-child {
     margin-bottom: 0;

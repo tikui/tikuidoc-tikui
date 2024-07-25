@@ -9,11 +9,11 @@
 }
 
 .tikui-horizontal-spacing {
+  display: flex;
+
   @each $size in $tikui-size-spacing {
     @include tikui-horizontal-spacing-column-size($size);
   }
-
-  display: flex;
 
   &.-inline {
     display: inline-flex;

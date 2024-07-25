@@ -25,12 +25,12 @@ $tikui-line-section-breakpoint: $tikui-breakpoint-large !default;
 }
 
 .tikui-line-section {
+  display: flex;
+  flex-direction: row;
+
   @each $size in $tikui-size-spacing {
     @include tikui-line-section-spacing($size);
   }
-
-  display: flex;
-  flex-direction: row;
 
   &--column {
     flex-basis: 0;
