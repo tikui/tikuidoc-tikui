@@ -10,7 +10,7 @@ Then you can clone this module as a reference and change files you want (don't f
 
 ## Consume a tikui module
 
-To consume a module, you should install it on your Tikui project using the latest version from `tikui/tikui` and then you have to edit the `tikuiconfig.json` to set the documentation name like your `$MODULE_NAME`.
+To use a module, you should install it on your Tikui project using the latest version from `@tikui/tikui-core` (or by generating it using `@tikui/cli`) and then you have to edit the `tikuiconfig.json` to set the documentation name like your `$MODULE_NAME`.
 
 Here is an example for a module named `tikuidoc-tikui`:
 
