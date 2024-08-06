@@ -10,6 +10,8 @@ $tikui-title-color-text: $tikui-color-text-dark !default;
   color: $tikui-title-color-text;
   font-family: $tikui-title-font-family;
   font-weight: bold;
+  hyphens: auto;
+  overflow-wrap: anywhere;
 }
 
 @import 'title-brand';
