@@ -73,6 +73,7 @@ $tikui-template-page-nav-width: 340px !default;
 
 @media screen and (max-width: $tikui-template-page-large-breakpoint) {
   .tikui-template-page {
+    display: block;
     overflow: auto;
 
     &--header-container,
