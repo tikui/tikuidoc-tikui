@@ -2,9 +2,13 @@
 
 $tikui-button-border-width: 1px !default;
 $tikui-button-padding: 19px !default;
+$tikui-button-padding-small: 9px !default;
 $tikui-button-min-width: 176px !default;
+$tikui-button-min-width-small: 80px !default;
 $tikui-button-line-height: 20px !default;
+$tikui-button-line-height-small: 16px !default;
 $tikui-button-font-size: 16px !default;
+$tikui-button-font-size-small: 12px !default;
 $tikui-button-radius: 30px !default;
 $tikui-button-font-family: $tikui-font-family-main !default;
 $tikui-button-color-background: $tikui-color-secondary !default;
@@ -55,5 +59,12 @@ $tikui-button-secondary-hover-color-background: $tikui-button-color-background !
     &:hover {
       background-color: $tikui-button-secondary-hover-color-background;
     }
+  }
+
+  &.-small {
+    padding: $tikui-button-padding-small;
+    min-width: $tikui-button-min-width-small;
+    line-height: $tikui-button-line-height-small;
+    font-size: $tikui-button-font-size-small;
   }
 }
