@@ -62,3 +62,7 @@ const tikuiScripts = () => {
 };
 
 document.addEventListener('DOMContentLoaded', tikuiScripts, false);
+
+const copyCode = async (element) => {
+  await navigator.clipboard.writeText(element.dataset['code']);
+};
