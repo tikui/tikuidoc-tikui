@@ -1,5 +1,8 @@
-$tikui-quote-text-color: $tikui-color-text-dark !default;
-$tikui-quote-font-family: $tikui-font-family-main !default;
+@use '../../token/color/color';
+@use '../../token/font-family/font-family';
+
+$tikui-quote-text-color: color.$tikui-color-text-dark !default;
+$tikui-quote-font-family: font-family.$tikui-font-family-main !default;
 $tikui-quote-text-font-size: 16px;
 $tikui-quote-author-font-size: 14px;
 $tikui-quote-author-margin-left: 24px;

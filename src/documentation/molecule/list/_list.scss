@@ -1,3 +1,5 @@
+@use '../../quark/list/list';
+
 .tikui-list {
-  @include tikui-list;
+  @include list.tikui-list;
 }

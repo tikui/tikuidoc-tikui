@@ -1,3 +1,5 @@
+@use '../../quark/link/link';
+
 .tikui-link {
-  @include tikui-link;
+  @include link.tikui-link;
 }

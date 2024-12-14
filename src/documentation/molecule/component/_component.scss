@@ -1,3 +1,10 @@
+@use '../../quark/link/link';
+@use '../../quark/list/list';
+@use '../../quark/paragraph/paragraph';
+@use '../../quark/title/title-main';
+@use '../../quark/title/title-part';
+@use '../../quark/title/title-section';
+
 @mixin tikui-component-spacing($spacing) {
   & {
     margin-bottom: $spacing * 1px;
@@ -19,32 +26,32 @@
 
   &--markdown {
     h1 {
-      @include tikui-title-main;
+      @include title-main.tikui-title-main;
       @include tikui-component-spacing(24);
     }
 
     h2 {
-      @include tikui-title-section;
+      @include title-section.tikui-title-section;
       @include tikui-component-spacing(24);
     }
 
     h3 {
-      @include tikui-title-part;
+      @include title-part.tikui-title-part;
       @include tikui-component-spacing(24);
     }
 
     p {
-      @include tikui-paragraph;
+      @include paragraph.tikui-paragraph;
       @include tikui-component-spacing(16);
     }
 
     a {
-      @include tikui-link;
+      @include link.tikui-link;
     }
 
     ul,
     ol {
-      @include tikui-list;
+      @include list.tikui-list;
       @include tikui-component-spacing(16);
     }
   }

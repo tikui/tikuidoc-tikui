@@ -1,3 +1,5 @@
+@use 'title-base';
+
 $tikui-title-main-font-size: 76px !default;
 $tikui-title-main-bordered-border-width: 1px !default;
 
@@ -8,8 +10,10 @@ $tikui-title-main-bordered-border-width: 1px !default;
 }
 
 %tikui-title-main-bordered {
-  @supports (-webkit-text-stroke: $tikui-title-main-bordered-border-width $tikui-title-color-text) {
-    -webkit-text-stroke: $tikui-title-main-bordered-border-width $tikui-title-color-text;
+  @supports (
+    -webkit-text-stroke: $tikui-title-main-bordered-border-width title-base.$tikui-title-color-text
+  ) {
+    -webkit-text-stroke: $tikui-title-main-bordered-border-width title-base.$tikui-title-color-text;
     -webkit-text-fill-color: transparent;
   }
 }

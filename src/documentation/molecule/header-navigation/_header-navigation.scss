@@ -1,5 +1,7 @@
+@use '../../token/breakpoint/breakpoint';
+
 $tikui-header-navigation-spacing: 80px !default;
-$tikui-header-navigation-large-breakpoint: $tikui-breakpoint-large !default;
+$tikui-header-navigation-large-breakpoint: breakpoint.$tikui-breakpoint-large !default;
 
 .tikui-header-navigation {
   display: flex;

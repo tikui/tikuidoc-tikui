@@ -1,3 +1,5 @@
+@use '../../token/color/color' as color-color;
+@use '../../token/font-family/font-family';
 @use 'sass:color';
 
 $tikui-button-border-width: 1px !default;
@@ -10,19 +12,19 @@ $tikui-button-line-height-small: 16px !default;
 $tikui-button-font-size: 16px !default;
 $tikui-button-font-size-small: 12px !default;
 $tikui-button-radius: 30px !default;
-$tikui-button-font-family: $tikui-font-family-main !default;
-$tikui-button-color-background: $tikui-color-secondary !default;
-$tikui-button-color-border: $tikui-color-secondary !default;
-$tikui-button-color-text: $tikui-color-text-dark !default;
+$tikui-button-font-family: font-family.$tikui-font-family-main !default;
+$tikui-button-color-background: color-color.$tikui-color-secondary !default;
+$tikui-button-color-border: color-color.$tikui-color-secondary !default;
+$tikui-button-color-text: color-color.$tikui-color-text-dark !default;
 $tikui-button-focus-blur-radius: 5px !default;
-$tikui-button-focus-color-shadow: $tikui-color-primary !default;
+$tikui-button-focus-color-shadow: color-color.$tikui-color-primary !default;
 $tikui-button-hover-color-background: color.scale(
   $tikui-button-color-background,
   $lightness: -10%
 ) !default;
-$tikui-button-secondary-color-background: $tikui-color-shade-100 !default;
-$tikui-button-secondary-color-border: $tikui-color-secondary !default;
-$tikui-button-secondary-color-text: $tikui-color-text-dark !default;
+$tikui-button-secondary-color-background: color-color.$tikui-color-shade-100 !default;
+$tikui-button-secondary-color-border: color-color.$tikui-color-secondary !default;
+$tikui-button-secondary-color-text: color-color.$tikui-color-text-dark !default;
 $tikui-button-secondary-hover-color-background: $tikui-button-color-background !default;
 
 .tikui-button {

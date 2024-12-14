@@ -1,5 +1,7 @@
+@use '../../token/color/color';
+
 $tikui-nav-vertical-padding: 32px !default;
-$tikui-nav-vertical-color-background: $tikui-color-background-secondary !default;
+$tikui-nav-vertical-color-background: color.$tikui-color-background-secondary !default;
 $tikui-nav-vertical-item-spacing: 16px !default;
 $tikui-nav-vertical-item-level-1-spacing: 24px !default;
 $tikui-nav-vertical-item-indent-space: 16px !default;

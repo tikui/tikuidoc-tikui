@@ -1,3 +1,5 @@
+@use '../../quark/paragraph/paragraph';
+
 .tikui-paragraph {
-  @include tikui-paragraph;
+  @include paragraph.tikui-paragraph;
 }

@@ -1,6 +1,8 @@
+@use '../../token/breakpoint/breakpoint';
+
 $tikui-dual-section-horizontal-spacing: 200px !default;
 $tikui-dual-section-vertical-spacing: 100px !default;
-$tikui-dual-section-medium-breakpoint: $tikui-breakpoint-medium !default;
+$tikui-dual-section-medium-breakpoint: breakpoint.$tikui-breakpoint-medium !default;
 
 @mixin tikui-dual-section-size($size) {
   $size-pixel: $size * 1px;

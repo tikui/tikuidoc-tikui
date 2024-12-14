@@ -1,4 +1,7 @@
-$tikui-line-section-breakpoint: $tikui-breakpoint-large !default;
+@use '../../token/breakpoint/breakpoint';
+@use '../../token/size/size';
+
+$tikui-line-section-breakpoint: breakpoint.$tikui-breakpoint-large !default;
 
 @mixin tikui-line-section-spacing($spacing) {
   $pixel-spacing: $spacing * 1px;
@@ -28,7 +31,7 @@ $tikui-line-section-breakpoint: $tikui-breakpoint-large !default;
   display: flex;
   flex-direction: row;
 
-  @each $size in $tikui-size-spacing {
+  @each $size in size.$tikui-size-spacing {
     @include tikui-line-section-spacing($size);
   }
 
@@ -43,7 +46,7 @@ $tikui-line-section-breakpoint: $tikui-breakpoint-large !default;
   .tikui-line-section {
     flex-direction: column;
 
-    @each $size in $tikui-size-spacing {
+    @each $size in size.$tikui-size-spacing {
       @include tikui-line-section-small-spacing($size);
     }
 

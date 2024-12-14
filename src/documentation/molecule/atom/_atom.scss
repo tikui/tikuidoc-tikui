@@ -1,7 +1,9 @@
+@use '../../token/color/color';
+
 $tikui-atom-outer-space: 60px !default;
 $tikui-atom-inner-space: 16px !default;
-$tikui-atom-color-outline: $tikui-color-background-secondary !default;
-$tikui-atom-color-background: $tikui-color-background-secondary !default;
+$tikui-atom-color-outline: color.$tikui-color-background-secondary !default;
+$tikui-atom-color-background: color.$tikui-color-background-secondary !default;
 
 .tikui-atom {
   box-sizing: border-box;

@@ -1,11 +1,15 @@
-$tikui-title-brand-large-breakpoint: $tikui-breakpoint-large !default;
+@use '../../../quark/title/title-brand';
+@use '../../../token/breakpoint/breakpoint';
+@use '../../header-item/header-item';
+
+$tikui-title-brand-large-breakpoint: breakpoint.$tikui-breakpoint-large !default;
 $tikui-title-brand-small-font-size: 7vw;
 
 .tikui-title-brand {
-  @include tikui-title-brand;
+  @include title-brand.tikui-title-brand;
 }
 
-@media screen and (max-width: $tikui-header-item-large-breakpoint) {
+@media screen and (max-width: header-item.$tikui-header-item-large-breakpoint) {
   .tikui-title-brand {
     font-size: $tikui-title-brand-small-font-size;
   }
