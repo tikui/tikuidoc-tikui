@@ -1,4 +1,7 @@
-$tikui-template-page-large-breakpoint: $tikui-breakpoint-large !default;
+@use '../../token/breakpoint/breakpoint';
+@use '../../token/color/color';
+
+$tikui-template-page-large-breakpoint: breakpoint.$tikui-breakpoint-large !default;
 $tikui-template-page-spacing: 80px !default;
 $tikui-template-page-small-spacing: 2vw !default;
 $tikui-template-page-container-width: 1232px !default;
@@ -28,7 +31,7 @@ $tikui-template-page-nav-width: 340px !default;
     display: flex;
     flex-basis: 0;
     flex-grow: 1;
-    background-color: $tikui-color-background;
+    background-color: color.$tikui-color-background;
     padding: 0;
     min-height: 0;
     overflow: auto;
@@ -59,7 +62,7 @@ $tikui-template-page-nav-width: 340px !default;
   }
 
   &--header {
-    background-color: $tikui-color-shade-100;
+    background-color: color.$tikui-color-shade-100;
   }
 
   &.-atomized &--body {

@@ -1,9 +1,9 @@
-@import 'token/token';
-@import 'quark/quark';
-@import 'atom/atom';
-@import 'molecule/molecule';
-@import 'organism/organism';
-@import 'template/template';
+@use 'token/token';
+@use 'quark/quark';
+@use 'atom/atom';
+@use 'molecule/molecule';
+@use 'organism/organism';
+@use 'template/template';
 
 .doc-iframe {
   border: 1px solid #000;

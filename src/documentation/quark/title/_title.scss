@@ -1,20 +1,4 @@
-$tikui-title-line-height: $tikui-size-line-standard !default;
-$tikui-title-font-family: $tikui-font-family-main !default;
-$tikui-title-color-text: $tikui-color-text-dark !default;
-
-%tikui-title {
-  margin: 0;
-  padding: 0;
-  line-height: $tikui-title-line-height;
-  white-space: pre-line;
-  color: $tikui-title-color-text;
-  font-family: $tikui-title-font-family;
-  font-weight: bold;
-  hyphens: auto;
-  overflow-wrap: anywhere;
-}
-
-@import 'title-brand';
-@import 'title-main';
-@import 'title-part';
-@import 'title-section';
+@use 'title-brand';
+@use 'title-main';
+@use 'title-part';
+@use 'title-section';

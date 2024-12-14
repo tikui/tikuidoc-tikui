@@ -1,3 +1,5 @@
+@use '../../../quark/title/title-part';
+
 .tikui-title-part {
-  @include tikui-title-part;
+  @include title-part.tikui-title-part;
 }

@@ -1,6 +1,9 @@
-$tikui-header-height: $tikui-size-header-height !default;
+@use '../../token/breakpoint/breakpoint';
+@use '../../token/size/size';
+
+$tikui-header-height: size.$tikui-size-header-height !default;
 $tikui-header-spacing: 80px !default;
-$tikui-header-large-breakpoint: $tikui-breakpoint-large !default;
+$tikui-header-large-breakpoint: breakpoint.$tikui-breakpoint-large !default;
 $tikui-header-small-spacing: 10px !default;
 
 .tikui-header {

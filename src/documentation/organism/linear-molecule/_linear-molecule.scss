@@ -1,5 +1,7 @@
+@use '../../token/breakpoint/breakpoint';
+
 $tikui-linear-molecule: 30px !default;
-$tikui-linear-molecule-medium-breakpoint: $tikui-breakpoint-medium !default;
+$tikui-linear-molecule-medium-breakpoint: breakpoint.$tikui-breakpoint-medium !default;
 
 .tikui-linear-molecule {
   display: flex;
