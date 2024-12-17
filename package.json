@@ -1,6 +1,6 @@
 {
   "name": "tikuidoc-tikui",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "Tikui documentation",
   "main": "tikuidoc.json",
   "files": [
