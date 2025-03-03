@@ -46,6 +46,6 @@
     "stylelint-order": "^6.0.4",
     "ts-jest": "29.2.6",
     "tsx": "4.19.3",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   }
 }
