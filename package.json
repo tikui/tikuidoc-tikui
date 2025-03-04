@@ -33,7 +33,7 @@
     "sass": ">=1.45.0 <2.0.0"
   },
   "devDependencies": {
-    "@fontsource/montserrat": "5.1.1",
+    "@fontsource/montserrat": "5.2.0",
     "@types/jest": "29.5.14",
     "concurrently": "9.1.2",
     "husky": "9.1.7",
