@@ -45,7 +45,7 @@
     "stylelint-config-standard-scss": "15.0.1",
     "stylelint-order": "^7.0.0",
     "ts-jest": "29.4.4",
-    "tsx": "4.20.5",
+    "tsx": "4.20.6",
     "typescript": "5.9.2"
   }
 }
