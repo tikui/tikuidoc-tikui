@@ -38,7 +38,7 @@
     "concurrently": "9.2.1",
     "husky": "9.1.7",
     "jest": "30.2.0",
-    "prettier": "3.7.0",
+    "prettier": "3.7.1",
     "pug-lint": "2.7.0",
     "stylelint": "16.26.0",
     "stylelint-config-concentric-order": "5.2.1",
