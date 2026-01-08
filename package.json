@@ -42,7 +42,7 @@
     "pug-lint": "2.7.0",
     "stylelint": "16.26.1",
     "stylelint-config-concentric-order": "5.2.1",
-    "stylelint-config-standard-scss": "15.0.1",
+    "stylelint-config-standard-scss": "16.0.0",
     "stylelint-order": "^7.0.0",
     "ts-jest": "29.4.6",
     "tsx": "4.21.0",
