@@ -35,7 +35,7 @@
   "devDependencies": {
     "@fontsource/montserrat": "5.2.8",
     "@types/jest": "30.0.0",
-    "concurrently": "9.2.3",
+    "concurrently": "10.0.3",
     "husky": "9.1.7",
     "jest": "30.4.2",
     "prettier": "3.8.4",
