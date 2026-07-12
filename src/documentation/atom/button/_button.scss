@@ -34,7 +34,6 @@ $tikui-button-secondary-hover-color-background: $tikui-button-color-background !
   border: $tikui-button-border-width solid $tikui-button-color-border;
   border-radius: $tikui-button-radius;
   background-color: $tikui-button-color-background;
-  cursor: pointer;
   padding: $tikui-button-padding;
   min-width: $tikui-button-min-width;
   text-align: center;
@@ -44,6 +43,7 @@ $tikui-button-secondary-hover-color-background: $tikui-button-color-background !
   font-family: $tikui-button-font-family;
   font-size: $tikui-button-font-size;
   font-weight: bold;
+  cursor: pointer;
 
   &:hover {
     background-color: $tikui-button-hover-color-background;

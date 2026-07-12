@@ -23,12 +23,12 @@ $tikui-header-item-padding-bottom: $tikui-header-item-spacing + $tikui-header-it
   border: 0;
   border-radius: 0;
   background: none;
-  cursor: pointer;
   padding: 0 0 $tikui-header-item-padding-bottom;
   text-decoration: none;
   color: $tikui-header-item-color-text;
   font-family: $tikui-header-item-font-family;
   font-size: $tikui-header-item-font-size;
+  cursor: pointer;
 
   &:focus &--text {
     border-radius: $tikui-header-item-text-radius;
