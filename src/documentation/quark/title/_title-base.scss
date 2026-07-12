@@ -11,9 +11,9 @@ $tikui-title-color-text: color.$tikui-color-text-dark !default;
   padding: 0;
   line-height: $tikui-title-line-height;
   white-space: pre-line;
+  overflow-wrap: anywhere;
+  hyphens: auto;
   color: $tikui-title-color-text;
   font-family: $tikui-title-font-family;
   font-weight: bold;
-  hyphens: auto;
-  overflow-wrap: anywhere;
 }
