@@ -12,6 +12,7 @@ describe('Part files exists', () => {
       'code.pug',
       'component.pug',
       'component-render.pug',
+      'render-doc.pug',
       'template.pug',
       'template-render.pug',
     );
